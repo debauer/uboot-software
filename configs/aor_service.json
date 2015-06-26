@@ -1,0 +1,56 @@
+{
+	"hostname": "localhost",
+	"circle_sleep": 0.1,
+	"telegram_sleep": 0.05,
+	"store": {
+		"mongo": false,
+		"influx": true,
+		"redis": true,
+		"rrd": false
+	},
+	"influx": {
+		"host": "localhost",
+		"port": 8086,
+		"db": "aor2015",
+		"user": "admin",
+		"pw": "admin"
+	},
+	"logging": {
+		"logger": {
+			"info": false,
+			"error": true
+		},
+		"rest": {
+			"info": false,
+			"error": true
+		}
+	},
+	"music": {
+		"keys": ["volume","repeat","single","random","title","lage","gforce"],
+		"playlist_lines": 4
+	},
+	"w1": {
+		"uboot": "28-011454989cff",
+		"ssdController": "28-0114546fa4ff",
+		"innen": "28-0114546fa4ff",
+		"aussen": "28-0114546fa4ff",
+		"oel": 	 "28-0114546fa4ff",
+		"motor": "28-0114546fa4ff",
+		"bier":  "28-0114546fa4ff"
+	},
+	"autos": {
+		"anzahl": 3,
+		"sensoren":{
+			"auto0": ["oel","wasser","motor","innen","ausen","position","lage","gforce","bier"],
+			"auto1": ["oel","wasser","motor","innen","position","lage","gforce"],
+			"auto2": ["oel","wasser","motor","innen","position","lage","gforce"]
+		}
+	},
+	"keyvalues": {
+		"cpu":"percent",
+		"cpu":"temperatur",
+		"ram":"total",
+		"ram":"used",
+		"ram":"percent"
+	}
+}
